@@ -1,3 +1,12 @@
+@media (max-width: 1024px){
+  #articles img {
+    max-height: 500px;
+  }
+  .article {
+    width: 100%;
+}
+}
+  
 @media (max-width: 768px) {
   .d-flex {
     display: block;
@@ -244,4 +253,10 @@
   .post {
     width: 100%;
   }
+  div#articles {
+    margin: 0;
+  }
+  .recent-post {
+    margin: 0;
+}
 }

@@ -640,6 +640,7 @@ button {
 .article-content {
   padding-top: 100px;
 }
+
 .article {
   position: relative;
   width: 48%;
@@ -659,14 +660,15 @@ div#articles {
 
 .article-title {
   position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: white;
-    background-color: rgba(60, 60, 60, 0.5);
-    padding: 10px 15px 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  background-color: rgba(60, 60, 60, 0.5);
+  padding: 10px 15px 0;
 }
-.news{
+
+.news {
   background-color: rgb(134, 5, 5);
   padding: 5px 10px;
   display: inline-block;
@@ -674,6 +676,7 @@ div#articles {
   color: #fff;
   border-radius: 4px;
 }
+
 .languages {
   background-color: orange;
   padding: 5px 10px;
@@ -688,6 +691,7 @@ div#articles {
   max-height: 350px;
   display: block;
 }
+
 .fa-eye {
   position: absolute;
   top: 10px;
@@ -705,6 +709,7 @@ div#articles {
 .languages.css {
   background-color: rgb(0, 145, 255);
 }
+
 .text-article .date {
   padding-left: 10px;
   padding-top: 5px;
@@ -725,9 +730,11 @@ div#articles {
 .chrome {
   padding: 8px 0;
 }
-.recent-post{
+
+.recent-post {
   margin: 0 120px;
 }
+
 .recent-post h1 {
   padding-top: 50px;
   padding-bottom: 40px;
