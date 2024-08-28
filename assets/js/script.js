@@ -36,9 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
-  document
-    .getElementById("password")
-    .addEventListener("keyup", function (event) {
+  document.getElementById("password").addEventListener("keyup", function (event) {
       if (event.keyCode === 13) {
         handleLogin();
       }
