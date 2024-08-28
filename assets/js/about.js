@@ -18,13 +18,15 @@ document.addEventListener("DOMContentLoaded", function () {
         limitedData.forEach(item => {
             const articleDiv = document.createElement('div');
             articleDiv.classList.add('article');
+            const type = item.LOAI === 1 ? 'Tin tức' : 'Sự kiện';
 
             articleDiv.innerHTML = `
                 <img src="${item.HINHANH}" alt="${item.ID_HINH_ANH}">
+                <i class="fa-solid fa-eye" aria-hidden="true"> ${item.LUOT_XEM}</i>
                 <div class="article-title">
-                    <div class="text-overlay d-flex">
-                        <span class="languages">${item.LUOT_XEM}</span>
-                        <span class="date">${new Date(item.NGAY_TAO).toLocaleDateString()}</span>
+                    <div class="text-article d-flex">
+                        <span class="news">${type}</span>
+                        <span class="date"><i class="fa-regular fa-clock"></i> ${new Date(item.NGAY_TAO).toLocaleDateString()}</span>
                     </div>
                     <div class="chrome">
                         <a href="${item.TRICH_DAN}">${item.TIEU_DE}</a>

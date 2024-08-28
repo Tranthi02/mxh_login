@@ -4,7 +4,7 @@
   --font-size-base: 16px;
 }
 
-.red{
+.red {
   color: red;
 }
 
@@ -84,7 +84,7 @@ img {
   justify-content: space-between;
 }
 
-.flex-direction-column{
+.flex-direction-column {
   flex-direction: column;
 }
 
@@ -640,30 +640,40 @@ button {
 .article-content {
   padding-top: 100px;
 }
-
 .article {
   position: relative;
   width: 48%;
   margin-bottom: 30px;
 }
+
 div#articles {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 120px;
 }
+
 .text-overlay {
   padding-bottom: 10px;
 }
 
 .article-title {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding-left: 15px;
-  color: white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background-color: rgba(60, 60, 60, 0.5);
+    padding: 10px 15px 0;
 }
-
+.news{
+  background-color: rgb(134, 5, 5);
+  padding: 5px 10px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 4px;
+}
 .languages {
   background-color: orange;
   padding: 5px 10px;
@@ -671,13 +681,23 @@ div#articles {
   text-transform: uppercase;
   color: #fff;
   border-radius: 4px;
-  ;
 }
+
 #articles img {
   width: 100%;
-    max-height: 350px;
-    display: block;
+  max-height: 350px;
+  display: block;
 }
+.fa-eye {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  font-size: 10px;
+}
+
 .languages.jquery {
   background-color: purple;
 }
@@ -685,8 +705,7 @@ div#articles {
 .languages.css {
   background-color: rgb(0, 145, 255);
 }
-
-.text-overlay .date {
+.text-article .date {
   padding-left: 10px;
   padding-top: 5px;
 }
@@ -696,22 +715,25 @@ div#articles {
   font-size: 18px;
   font-weight: 600;
 }
-.chrome a:hover{
+
+.chrome a:hover {
   text-decoration: underline;
   outline: none;
   text-decoration-thickness: 0.5px;
 }
+
 .chrome {
-  padding-bottom: 8px;
+  padding: 8px 0;
+}
+.recent-post{
+  margin: 0 120px;
 }
 .recent-post h1 {
   padding-top: 50px;
   padding-bottom: 40px;
   font-weight: 600;
 }
-.article-title p{
-  color:#000;
-}
+
 .posts {
   display: flex;
   flex-wrap: wrap;
@@ -725,13 +747,6 @@ div#articles {
 
 .post-info {
   padding-top: 10px;
-}
-
-.languages {
-  background-color: orange;
-  padding: 5px 10px;
-  display: inline-block;
-  text-transform: uppercase;
 }
 
 .languages.web-design {
