@@ -4,7 +4,10 @@
   }
   .article {
     width: 100%;
-}
+  }
+  .post {
+    width: 48%;
+  }
 }
   
 @media (max-width: 768px) {
@@ -209,6 +212,13 @@
   .post {
     width: 48%;
   }
+  
+  div#articles {
+    margin: 0 30px;
+  }
+  .recent-post {
+    margin: 0 30px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -258,5 +268,5 @@
   }
   .recent-post {
     margin: 0;
-}
+  }
 }
